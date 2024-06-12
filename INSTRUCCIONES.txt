@@ -1,0 +1,27 @@
+==========INSTRUCCIONES======
+1. Instalar get-pip.py:
+python get-pip.py
+
+2. Instalar pygame:
+pip install pygame
+
+3. Verificar que SimpleGame funciona:
+python SimpleGame.py
+
+4. Verificar que Ball_Original funciona:
+python Ball_Original.py
+
+=======PARA EL EJERCICIO CON VISION ARTIFICIAL=====
+5. Instalar pyautogui
+pip install pyautogui
+
+6. Instalar OpenCV
+pip install opencv-python
+
+7. Instalar Pillow
+pip install Pillow
+
+8. Ejecutar Ball_OpenCV
+python Ball_OpenCV.py
+
+9. Ajustar LEFT y TOP en el código python de Ball_OpenCV.

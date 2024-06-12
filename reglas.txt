@@ -1,0 +1,64 @@
+
+rule "No pasa"
+when
+	AND(matematicas < 10, escritura < 10, cienciasNat < 10, ingles < 10, cienciasSoc < 10)
+then
+	preferencia()
+end
+
+rule "mejor resultado"
+when
+	AND(matematicas > 80, escritura > 75, cienciasNat > 75, ingles > 75, cienciasSoc > 75)
+then
+	preferencia1()
+end
+
+rule "ciencias o ingenieria"
+when
+	AND(matematicas > 75, cienciasNat > 75)
+then
+	preferencia2()
+end
+
+rule "ingenieria o ciencias"
+when
+	AND(OR(ingenieria > 7, ciencias > 7), matematicas < 75)
+then
+	preferencia3()
+end
+
+rule "ciencias y salud"
+when
+	AND(cienciasNat < 75, salud > 7)
+then 
+	preferencia4()
+
+end
+
+rule "ingles"
+when
+	AND(ingles > 75)
+then
+	preferencia5()
+end
+
+rule "sociales y matematicas"
+when
+	AND(cienciasSoc < 75, matematicas > 75)
+then
+	preferencia6()
+end
+
+rule "ciencias y escritura"
+when
+	AND(escritura > 75, ciencias > 7)
+then
+	preferencia7()
+end
+
+rule "ingenieria e ingles"
+when
+	AND(ingenieria > 7, ingles < 75)
+then
+	preferencia8()
+end
